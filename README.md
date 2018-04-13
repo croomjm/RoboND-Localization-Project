@@ -11,4 +11,4 @@ My "upgraded" robot can be run as follows:
 Both launch files have been modified to concurrently launch the [AMCL](http://wiki.ros.org/amcl#Subscribed_Topics) localization node as well.
 
 In order to run the navigation_goal script, the following command should be run from catkin_ws in another terminal window:
-`rosrun udacity_bot navigation`
+`rosrun udacity_bot navigation_goal`
