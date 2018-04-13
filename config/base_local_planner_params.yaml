@@ -1,0 +1,11 @@
+TrajectoryPlannerROS:
+
+  holonomic_robot: false
+  max_vel_x: 1.0
+  max_vel_theta: 3.0
+  controller_frequency: 15.0
+  meter_scoring: true
+  sim_time: 1.0
+  pdist_scale: 1.5
+  occdist_scale: .05
+  heading_lookahead: 3.0
