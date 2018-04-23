@@ -18,6 +18,9 @@
     <param name="max_particles" value="100"/>
     <param name="transform_tolerance" value="0.1"/>
     <param name="laser_min_range" value="0.4"/>
+    <param name="initial_pose_x" value="0.0"/>
+    <param name="initial_pose_y" value="0.0"/>
+    <param name="initial_pose_a" value="0.0"/>
     <param name="laser_max_range" value="30.0"/>
     <!-- End added parameters in tuning phase -->
 

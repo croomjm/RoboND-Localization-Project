@@ -1,6 +1,7 @@
 #include <ros/ros.h>
 #include <move_base_msgs/MoveBaseAction.h>
 #include <actionlib/client/simple_action_client.h>
+using namespace std;
 
 typedef actionlib::SimpleActionClient<move_base_msgs::MoveBaseAction> MoveBaseClient;
 
@@ -34,12 +35,20 @@ int main(int argc, char** argv)
     ROS_INFO("Sending goal");
     ac.sendGoal(goal);
 
+    ros::Time start_time = ros::Time::now();
+
     ac.waitForResult();
 
     if (ac.getState() == actionlib::SimpleClientGoalState::SUCCEEDED)
         ROS_INFO("Excellent! Your robot has reached the goal position.");
     else
         ROS_INFO("The robot failed to reach the goal position");
+
+    ros::Time end_time = ros::Time::now();
+
+    ros::Duration diff = end_time - start_time;
+
+    cout << "Navigation duration: " << diff.toSec() << " seconds" << endl;
 
     return 0;
 }
