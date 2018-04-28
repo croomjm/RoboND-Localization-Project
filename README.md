@@ -12,3 +12,5 @@ Both launch files have been modified to concurrently launch the [AMCL](http://wi
 
 In order to run the navigation_goal script, the following command should be run from catkin_ws in another terminal window:
 `rosrun udacity_bot navigation_goal`
+
+Videos of successful completion of the course can be found [here](https://youtu.be/rZfr-IhNei8) and [here](https://youtu.be/7aVs_MXItHM).
